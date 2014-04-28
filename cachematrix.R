@@ -6,8 +6,8 @@ makeCacheMatrix <- function(x = matrix()) {
                 m <<- NULL
         }
         get <- function() x
-        setinverse <- function(solve) m <<- solve #set the inverse matrix
-        getinverse <- function() m #retrieves the inverse matrix
+        setinverse <- function(solve) m <<- solve #defines the method that sets the inverse matrix
+        getinverse <- function() m #defines the method that retrieves the inverse matrix
         list(set = set, get = get,
              setinverse = setinverse ,
              getinverse = getinverse )

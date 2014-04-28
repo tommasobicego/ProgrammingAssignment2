@@ -1,4 +1,4 @@
-#create the matrix that you can work on manipulating it by a list of functions
+#create the matrix
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
         set <- function(y) {
@@ -6,8 +6,8 @@ makeCacheMatrix <- function(x = matrix()) {
                 m <<- NULL
         }
         get <- function() x
-        setinverse <- function(solve) m <<- solve
-        getinverse <- function() m
+        setinverse <- function(solve) m <<- solve #set the inverse matrix
+        getinverse <- function() m #retrieves the inverse matrix
         list(set = set, get = get,
              setinverse = setinverse ,
              getinverse = getinverse )
